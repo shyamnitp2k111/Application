@@ -10,13 +10,13 @@ public class JPAService {
     private SampleJDBCTemplate jpaRepository;
 
     @Autowired
-    UserRespository userRespository;
+    UserRepository userRepository;
 
     public void saveUserInfo(UserInfo userInfo) {
         jpaRepository.saveUserInfo(userInfo);
     }
 
     public void saveUser(UserDetails userInfo) {
-        userRespository.save(userInfo);
+        userRepository.save(userInfo);
     }
 }
